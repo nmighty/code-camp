@@ -1,0 +1,38 @@
+body
+{
+    background-color:black;
+}
+.bob
+{
+    color: #00ff73;
+    font-size: 120px;
+    text-align: center;
+}
+a
+{
+    color: #00ff73;
+    font-size: 40px;
+    background-color: #ffffff;
+    padding: 20px 20px 10px 20px;
+    text-decoration: none;
+    font-family: fantasy;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 9px rgb(125, 123, 123);
+    /*padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;*/
+
+}
+a:active
+{
+    transform: translateY(4px);
+    box-shadow: 0 5px rgb(125, 123, 123);
+}
