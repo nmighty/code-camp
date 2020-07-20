@@ -8,12 +8,12 @@ body
     font-size: 120px;
     text-align: center;
 }
-a
+.pressbutton
 {
     color: #00ff73;
     font-size: 40px;
     background-color: #ffffff;
-    padding: 20px 20px 10px 20px;
+    padding: 40px 15px 15px 15px;
     text-decoration: none;
     font-family: fantasy;
     border: none;
@@ -31,8 +31,16 @@ a
   box-shadow: 0 9px #999;*/
 
 }
-a:active
+.pressbutton:active
 {
     transform: translateY(4px);
     box-shadow: 0 5px rgb(125, 123, 123);
+}
+
+#changamathingie
+{
+    width: 100%;
+    background-color: indigo;
+    height: 100px;
+
 }
