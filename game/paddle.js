@@ -6,7 +6,9 @@ class Paddle
         this.y = height / 2 - 40;
         this.height = 80;
         this.width = 20;
-
+        this.isUp = false;
+        this.isDown = false;
+        
     }
     display()
     {
@@ -16,11 +18,11 @@ class Paddle
 
     up()
     {
-        this.y = this.y - 2;
+        this.y = this.y - 4;
     }
 
     down()
     {
-        this.y = this.y + 2;
+        this.y = this.y + 4;
     }
 }
