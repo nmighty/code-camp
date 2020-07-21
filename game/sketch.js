@@ -12,4 +12,7 @@ function draw()
   background(0);
   playerPaddle.display();
   aiPaddle.display();
+
+  playerPaddle.up();
+  aiPaddle.down();
 }
