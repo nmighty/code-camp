@@ -29,11 +29,11 @@ class Ball
         this.y = this.y + this.ySpeed;
 
         //if the ball hits the playerPaddle, then bounce
-        if (this.x > (playerPaddle.x - this.r) & this.y > playerPaddle.y & this.y < (playerPaddle.y + playerPaddle.height))
+        if (this.x > (playerPaddle.x - this.r) && this.y >= playerPaddle.y && this.y <= (playerPaddle.y + playerPaddle.height))
             this.xSpeed = - this.xSpeed;
 
         //if the ball hits the aiPaddle, then bounce
-        if (this.x < (aiPaddle.x + this.r + aiPaddle.width) & this.y > aiPaddle.y & this.y < (aiPaddle.y + aiPaddle.height))
+        if (this.x < (aiPaddle.x + this.r + aiPaddle.width) && this.y >= aiPaddle.y && this.y <= (aiPaddle.y + aiPaddle.height))
             this.xSpeed = - this.xSpeed;
     }
 
