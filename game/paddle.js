@@ -18,11 +18,13 @@ class Paddle
 
     up()
     {
-        this.y = this.y - 4;
+        if (this.y > 0)
+            this.y = this.y - 4;
     }
 
     down()
     {
-        this.y = this.y + 4;
+        if (this.y < (height - this.height))
+            this.y = this.y + 4;
     }
 }
