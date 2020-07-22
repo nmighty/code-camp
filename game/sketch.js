@@ -36,11 +36,3 @@ function keyReleased()
   else if (keyCode == DOWN_ARROW)
     playerPaddle.isDown = false;
 }
-function keyPressed()
-{
-  if (keyCode == W_KEY)
-    aiPaddle.isUp = false;
-  else if (keyCode == S_KEY)
-    aiPaddle.isDown = false;
-}
-function keyReleased()

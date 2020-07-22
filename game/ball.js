@@ -21,13 +21,9 @@ move()
 
         if (this.y < this.r || this.y > (height - this.r))
         {
-            this.y = this.y;
-            this.x = this.x;
+            this.ySpeed = -this.ySpeed;
         }
-        else 
-        {
-            this.x = this.x + this.xSpeed;
-            this.y = this.y + this.ySpeed;
-        }
+        this.x = this.x + this.xSpeed;
+        this.y = this.y + this.ySpeed;
     }
 }
