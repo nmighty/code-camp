@@ -4,6 +4,7 @@ class Paddle
     {
         this.x = x;
         this.y = height / 2 - 40;
+        this.radius = 10;
         this.height = 80;
         this.width = 20;
         this.isUp = false;
@@ -13,18 +14,18 @@ class Paddle
     display()
     {
         fill(0, 255, 115);
-        rect(this.x, this.y, this.width, this.height)
+        rect(this.x, this.y, this.width, this.height, this.radius);
     }
 
     up()
     {
         if (this.y > 0)
-            this.y = this.y - 4;
+            this.y = this.y - 8;
     }
 
     down()
     {
         if (this.y < (height - this.height))
-            this.y = this.y + 4;
+            this.y = this.y + 8;
     }
 }

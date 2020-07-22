@@ -15,7 +15,7 @@ function draw()
   playerPaddle.display();
   aiPaddle.display();
   ball.display();
-  ball.move();
+  ball.move(playerPaddle);
   if (playerPaddle.isUp)
     playerPaddle.up();
   else if (playerPaddle.isDown)  
@@ -24,15 +24,15 @@ function draw()
 
 function keyPressed()
 {
-  if (keyCode == UP_ARROW)
+  if (keyCode == UP_ARROW || keyCode == 87)
     playerPaddle.isUp = true;
-  else if (keyCode == DOWN_ARROW)
+  else if (keyCode == DOWN_ARROW || keyCode == 83)
     playerPaddle.isDown = true;
 }
 function keyReleased()
 {
-  if (keyCode == UP_ARROW)
+  if (keyCode == UP_ARROW || keyCode == 87)
     playerPaddle.isUp = false;
-  else if (keyCode == DOWN_ARROW)
+  else if (keyCode == DOWN_ARROW || keyCode == 83)
     playerPaddle.isDown = false;
 }
