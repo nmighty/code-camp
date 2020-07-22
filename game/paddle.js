@@ -28,4 +28,12 @@ class Paddle
         if (this.y < (height - this.height))
             this.y = this.y + 8;
     }
+    
+    update()
+    {
+        if (this.isUp)
+            this.up();
+        else if (this.isDown)  
+            this.down();
+    }
 }

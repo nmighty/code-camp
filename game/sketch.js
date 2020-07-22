@@ -9,17 +9,33 @@ function setup() {
   ball = new Ball();
 }
 
-function draw() 
+function draw()
 {
   background(0);
   playerPaddle.display();
   aiPaddle.display();
+
+  playerPaddle.update();
+  aiPaddle.update();
+
+  processAI()
   ball.display();
-  ball.move(playerPaddle);
-  if (playerPaddle.isUp)
-    playerPaddle.up();
-  else if (playerPaddle.isDown)  
-    playerPaddle.down();
+  ball.move(playerPaddle, aiPaddle);
+
+}
+function processAI()
+{
+  let middleOfPaddle = aiPaddle.y + aiPaddle.height / 2;
+  if (middleOfPaddle > ball.y)
+  {
+    aiPaddle.isUp = true;
+    aiPaddle.isDown = false;
+  }
+  else
+  {
+    aiPaddle.isDown = true;
+    aiPaddle.isUp = false;
+  }
 }
 
 function keyPressed()
