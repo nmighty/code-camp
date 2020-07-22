@@ -15,7 +15,7 @@ function draw()
   playerPaddle.display();
   aiPaddle.display();
   ball.display();
-
+  ball.move();
   if (playerPaddle.isUp)
     playerPaddle.up();
   else if (playerPaddle.isDown)  
